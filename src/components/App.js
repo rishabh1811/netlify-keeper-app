@@ -17,16 +17,29 @@ var [todoList , setTodoList] = useState([]);
         }
         return[...prev, newItem]
       })
-      console.log(todoList);
+      
     }
 
+//*deleteItem() which receives id of an item
+function deleteItem(id){
+  
+    setTodoList((prev) =>{
+      return prev.filter((eachItem , index) => {
+        return index !== id;
+      })
+    })
+}
+
+
+// *Return
   return (
     <div>
       <Header />
 
       <Input addNewNote = {addNewNote}/>
+      
       <div className="notes-container">
-      {todoList.map((eachItem) => <Note title={eachItem.title} content={eachItem.content} />)}
+      {todoList.map((eachItem , index) => <Note key={index} id={index} title={eachItem.title} content={eachItem.content} deleteItem={deleteItem} />)}
       
       </div>
     

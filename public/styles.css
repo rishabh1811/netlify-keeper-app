@@ -100,3 +100,17 @@ footer p span{
     height: 2.5rem;
       background-color: #eaeaeaeb;          
   }
+
+  /* delete button styles */
+
+  .note{
+    position: relative;
+  }
+  
+  .note button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    font-size: large;
+  }
