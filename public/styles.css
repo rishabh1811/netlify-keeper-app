@@ -6,6 +6,7 @@
 }
 
 body{
+    font-family: Arial, Helvetica, sans-serif;
     background:#eee;
 }
 
@@ -58,6 +59,7 @@ body{
     padding: 0 7%;
     gap: 20px;
     justify-content : center;
+    margin-bottom: 50px;
 }
 
 .note{
@@ -79,3 +81,22 @@ body{
    margin-bottom: 5px;
 }
 
+footer {
+    
+    text-align: center;
+    width: 100%;
+    
+}
+  
+
+footer p span{  
+    font-size: 1.2em; 
+}
+
+#footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+      background-color: #eaeaeaeb;          
+  }
